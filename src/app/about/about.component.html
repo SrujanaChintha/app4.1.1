@@ -1,0 +1,12 @@
+<h2>About Us</h2>
+<p>This is the About page. Here we use some Angular bindings!</p>
+
+<!-- String Interpolation -->
+<p>Our mission is: {{ mission }}</p>
+
+<!-- Property Binding -->
+<img [src]="imgUrl" alt="About Image" width="200">
+
+<!-- Event Binding -->
+<button (click)="toggleDescription()">Toggle Description</button>
+<p *ngIf="showDescription">{{ description }}</p>

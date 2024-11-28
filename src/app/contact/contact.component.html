@@ -1,0 +1,8 @@
+<h2>Contact Us</h2>
+<p>Feel free to get in touch with us using the form below:</p>
+
+<!-- Class Binding -->
+<input [class.special-input]="isFocused" type="text" (focus)="onFocus()" (blur)="onBlur()" placeholder="Enter your name" />
+
+<!-- Style Binding -->
+<p [style.color]="isFocused ? 'blue' : 'black'">Your Name: {{ name }}</p>
